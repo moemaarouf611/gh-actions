@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch #when it will be triggered this will wait for us to manually trigger it
+jobs: #this is the work tht will be done and dont forget the s and indent the following
+  first-job: #this is just a name and indent again
+    runs-on: ubuntu-latest #this is have to be written like this look for the list of the runners
+    steps: #these are the steps that will run in this job and for example we have two of them here
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
